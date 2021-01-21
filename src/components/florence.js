@@ -1,1 +1,3 @@
-// a travaille rdessus
+// Home page
+// + navbar
+// + footer
