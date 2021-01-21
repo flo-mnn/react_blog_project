@@ -9928,5 +9928,45 @@ h3 {
     border-color: #dee2e6;
   }
 }
+#root {
+  width: 100%;
+}
+
+#home {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#home .inner-banner {
+  width: 80%;
+  height: 500px;
+  overflow-y: hidden;
+  position: relative;
+}
+#home .inner-banner .voile {
+  background-color: black;
+  z-index: 15;
+}
+#home .inner-banner .voile img {
+  width: 100%;
+  opacity: 0.6;
+}
+#home .inner-banner .inner-text {
+  z-index: 20;
+}
+#home #categories .col-12 {
+  height: 250px;
+}
+#home #categories .col-12 .inner-col {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 95%;
+  height: 100%;
+}
+#home #categories .col-12 h1 {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 /*# sourceMappingURL=index.css.map */
