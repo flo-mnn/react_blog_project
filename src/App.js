@@ -5,9 +5,10 @@ import sydney from './components/Home/sydney.jpg';
 import piter from './components/Home/piter.jpg';
 import newyork from './components/Home/newyork.jpg';
 import kruger from './components/Home/kruger.jpg';
-import Home from "./components/Home";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from "./components/Home";
+import Parcourir from './components/Parcourir';
 
 import {
   BrowserRouter as Router,
@@ -43,7 +44,8 @@ class App extends Component{
       <Router>
         <div className="App w-100">
           <Header />
-          <Home leState={this.state}/>
+          {/* <Home leState={this.state}/> */}
+          <Parcourir leState={this.state} />
           <Footer />
         </div>
       </Router>

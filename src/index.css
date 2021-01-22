@@ -10061,6 +10061,24 @@ nav a:hover {
   transform: scale(1.2);
 }
 
+#tous-articles .tous-article-page .row {
+  height: 230px;
+}
+#tous-articles .tous-article-page .row .img {
+  overflow: hidden;
+}
+#tous-articles .tous-article-page .row .img img {
+  height: 230px;
+}
+#tous-articles .tous-article-page .row .text {
+  position: relative;
+}
+#tous-articles .tous-article-page .row .text button {
+  position: absolute;
+  top: 75%;
+  right: 20px;
+}
+
 footer {
   margin-top: 100px;
 }

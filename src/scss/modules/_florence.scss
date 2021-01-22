@@ -133,6 +133,29 @@ nav {
     }
 }
 
+
+#tous-articles {
+    .tous-article-page {
+        
+        .row {
+            height: 230px;
+            .img {
+                overflow: hidden;
+                img {
+                    height: 230px;
+                }
+            };
+            .text {
+                position: relative;
+                button {
+                    position: absolute;
+                    top: 75%;
+                    right: 20px;
+                }
+            }
+        }
+    }
+};
 footer {
     margin-top: 100px;
     #subscribe {
