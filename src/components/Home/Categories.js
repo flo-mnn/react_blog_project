@@ -6,9 +6,8 @@ import people from "./people.jpg";
 
 const Categories = props => {
     
-    const [bg, setBg] = useState([offroad,citytrip,foodies,people]);
+    const [bg] = useState([offroad,citytrip,foodies,people]);
 
-    console.log(bg);
     return (
         <div className="row mx-0 my-5" id="categories">
             {

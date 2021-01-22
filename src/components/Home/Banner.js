@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const Banner = props => {
 
 
@@ -13,7 +15,9 @@ const Banner = props => {
                         <div className='inner-text w-50 position-absolute text-center text-light'>
                             <h1>{props.allArticles[0].titre}</h1>
                             <h5>by {props.allArticles[0].auteur}</h5>
-                            <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                            <Link to="/article/0">
+                                <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                            </Link>
                         </div>
                     </div>
                      
@@ -26,7 +30,9 @@ const Banner = props => {
                         <div className='inner-text w-50 position-absolute text-center text-light'>
                             <h1>{props.allArticles[1].titre}</h1>
                             <h5>by {props.allArticles[1].auteur}</h5>
-                            <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                            <Link to="/article/1">
+                                <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -38,7 +44,9 @@ const Banner = props => {
                         <div className='inner-text w-50 position-absolute text-center text-light'>
                             <h1>{props.allArticles[2].titre}</h1>
                             <h5>by {props.allArticles[2].auteur}</h5>
-                            <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                            <Link to="/article/2">
+                                <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

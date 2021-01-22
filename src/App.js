@@ -1,25 +1,25 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import venezia from './components/Home/venice.jpg';
 import istanbul from './components/Home/istanbul.jpg';
 import sydney from './components/Home/sydney.jpg';
 import piter from './components/Home/piter.jpg';
 import newyork from './components/Home/newyork.jpg';
 import kruger from './components/Home/kruger.jpg';
-import Home from "./components/Home";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from "./components/Home";
+import Parcourir from './components/Parcourir';
+import Form from './components/Form';
+import Article from './components/Article';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-{/* <FontAwesomeIcon icon={faFacebook} /> */}
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component{
 
@@ -36,17 +36,47 @@ class App extends Component{
     tags : ['Off Road','CityTrip','Foodies','Rencontres'],
   }
 
+  toTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
   render() {
-    console.log(this.state);
 
     return (
-      <Router>
-        <div className="App w-100">
-          <Header />
-          <Home leState={this.state}/>
-          <Footer />
-        </div>
-      </Router>
+      <Fragment>
+            <button id='toTop' className="btn btn-danger position-sticky" onClick={this.toTop}>
+              <FontAwesomeIcon icon={faArrowUp}/>
+            </button>
+        <Router>
+          <div className="App w-100">
+            <Header />
+            <Switch>
+              <Route path="/parcourir">
+                <Parcourir leState={this.state} />
+              </Route>
+              <Route path="/form">
+                <Form />
+              </Route>
+              {
+                this.state.articles.map( (elem,index)=> {return(
+                  <Route path={'/article/'+index} key={index}>
+                    <Article article={elem}/>
+                  </Route>
+                )})
+              }
+              <Route path="/">
+                <Home leState={this.state}/>
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+        <Footer />
+      </Fragment>
     );
   }
 }

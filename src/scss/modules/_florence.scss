@@ -1,7 +1,18 @@
+// :root{
+//     scroll-behavior: smooth;
+// }
+
 #root {
     width: 100%;
     font-family: sans-serif;
+    position: relative;
 }
+button#toTop {
+    top: 80vh;
+    left: 2vw;
+    z-index: 50;
+};
+
 nav {
     height: 200px;
     a {
@@ -130,6 +141,67 @@ nav {
                 };
             }
         };
+    }
+}
+
+
+#tous-articles {
+    .tous-article-page {
+        
+        .row {
+            height: 230px;
+            .img {
+                overflow: hidden;
+                img {
+                    height: 230px;
+                }
+            };
+            .text {
+                position: relative;
+                a {
+                    position: absolute;
+                    top: 75%;
+                    right: 20px;
+                }
+            }
+        }
+    }
+};
+
+#form {
+    form {
+        .row {
+            input,textarea{
+                border: none;
+                border-radius: 0;
+                border-bottom: solid 3px $danger;
+                transition: 0.2s;
+                &#recit{
+                    border-left: solid 3px $danger;
+                }
+                &::placeholder {
+                    color: $danger;
+                }
+                &:focus{
+                    outline: none;
+                    background-color: $danger;
+                    color: white !important;
+                    caret-color: white;
+                    &::placeholder{
+                        color: white;
+                    }
+                }
+            }
+            #name, #email {
+                width: 40%;
+            };
+            textarea{
+                resize: none;
+            }
+            input#file {
+                display: none;
+            };
+        }
     }
 }
 
