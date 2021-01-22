@@ -19,11 +19,11 @@ const Header = props => {
                 </Link>
                 <span>|</span>
                 <Link>
-                    <span>Ton Récit</span>
+                    <span>Découvrir</span>
                 </Link>
                 <span>|</span>
                 <Link>
-                    <span>Découvrir</span>
+                    <span>Ton Récit</span>
                 </Link>
             </nav>
         </Fragment>

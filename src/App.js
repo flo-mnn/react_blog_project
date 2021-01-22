@@ -7,6 +7,7 @@ import newyork from './components/Home/newyork.jpg';
 import kruger from './components/Home/kruger.jpg';
 import Home from "./components/Home";
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import {
   BrowserRouter as Router,
@@ -25,14 +26,14 @@ class App extends Component{
   
   state = {
     articles : [
-      {titre: `Venezia, la belle au bord de l'eau`, coverImg: venezia, auteur: "Letizia Santina", tags: ['City-Trip','Rencontres']},
-      {titre: `Sydney, au coeur de l'Océanie lointaine`, coverImg: sydney, auteur: "Jack Matthew", tags: ['Off-Road','Foodies']},
-      {titre: `Istanbul, ô cité emplie d'Histoire`, coverImg: istanbul, auteur: "Mehtap M.",tags: ['City-Trip','Foodies','Rencontres']},
-      {titre: `Saint-Pétersbourg, la détermination d'un Empire`, coverImg: piter, auteur: "Nadezhda Nikolaeva",tags: ['City-Trip','Foodies']},
-      {titre: `New-York, le rêve américain XXL`, coverImg: newyork, auteur: "Brooke Loyd",tags: ['City-Trip']},
-      {titre: `Cap sur Bonne-Espérance`, coverImg: kruger, auteur: "Brooke Loyd",tags: ['Off-Road','Foodies']},
+      {titre: `Venezia, la belle au bord de l'eau`, coverImg: venezia, auteur: "Letizia Santina", tags: ['City Trip','Rencontres']},
+      {titre: `Sydney, au coeur de l'Océanie lointaine`, coverImg: sydney, auteur: "Jack Matthew", tags: ['Off Road','Foodies']},
+      {titre: `Istanbul, ô cité emplie d'Histoire`, coverImg: istanbul, auteur: "Mehtap M.",tags: ['City Trip','Foodies','Rencontres']},
+      {titre: `Saint-Pétersbourg, la détermination d'un Empire`, coverImg: piter, auteur: "Nadezhda Nikolaeva",tags: ['City Trip','Foodies']},
+      {titre: `New-York, le rêve américain XXL`, coverImg: newyork, auteur: "Brooke Loyd",tags: ['City Trip']},
+      {titre: `Cap sur Bonne-Espérance`, coverImg: kruger, auteur: "Brooke Loyd",tags: ['Off Road','Foodies']},
     ],
-    tags : ['Off Road','City Trip','Foodies','Rencontres'],
+    tags : ['Off Road','CityTrip','Foodies','Rencontres'],
   }
 
   render() {
@@ -43,6 +44,7 @@ class App extends Component{
         <div className="App w-100">
           <Header />
           <Home leState={this.state}/>
+          <Footer />
         </div>
       </Router>
     );

@@ -10,7 +10,7 @@ const Categories = props => {
 
     console.log(bg);
     return (
-        <div className="row m-0" id="categories">
+        <div className="row mx-0 my-5" id="categories">
             {
                 props.tags.map((elem,index)=> {
                     return(
