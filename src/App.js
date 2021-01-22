@@ -30,7 +30,7 @@ class App extends Component{
 
     return (
       <div className="App w-100">
-        <Home leState={this.state}/>
+        
       </div>
     );
   }
