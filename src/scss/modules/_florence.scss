@@ -55,4 +55,30 @@ nav {
             };
         }
     }
+    #une {
+        width: 80%;
+        .carte {
+            height: 350px;
+            .inner-col {
+                background-color: rgba(250, 128, 114, 0.308);
+                .preview {
+                    height: 200px;
+                    overflow-y: hidden;
+                }
+                .text {
+                    height: 150px;
+                }
+            }
+            &:nth-child(1) {
+                order: 6;
+            }
+            &:nth-child(2) {
+                order: 6;
+            }
+            &:nth-child(3) {
+                order: 6;
+            }
+        }
+
+    }
 }

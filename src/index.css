@@ -9986,5 +9986,30 @@ nav a:hover {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+#home #une {
+  width: 80%;
+}
+#home #une .carte {
+  height: 350px;
+}
+#home #une .carte .inner-col {
+  background-color: rgba(250, 128, 114, 0.308);
+}
+#home #une .carte .inner-col .preview {
+  height: 200px;
+  overflow-y: hidden;
+}
+#home #une .carte .inner-col .text {
+  height: 150px;
+}
+#home #une .carte:nth-child(1) {
+  order: 6;
+}
+#home #une .carte:nth-child(2) {
+  order: 6;
+}
+#home #une .carte:nth-child(3) {
+  order: 6;
+}
 
 /*# sourceMappingURL=index.css.map */
