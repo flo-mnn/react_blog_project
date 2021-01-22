@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faPinterest, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,11 +23,13 @@ const SideBar = props => {
                 <span className="font-weight-bold text-light w-100">Une image,<br/>Une histoire</span>
             </div>
             <div id='decouverte' className="px-3 w-100 ">
-                <div id="random">
-                    <div id="readOne" style={{backgroundImage: `url(${props.all.articles[nRandom].coverImg})`}}>
-                        
+                <Link className='w-100' to={'/article/'+nRandom}>
+                    <div id="random">
+                        <div id="readOne" style={{backgroundImage: `url(${props.all.articles[nRandom].coverImg})`}}>
+                        </div>
                     </div>
-                </div>
+                </Link>
+                        
             </div>
             <div className="subtitle w-100 bg-danger text-center mt-5 py-4">
                 <span className="font-weight-bold text-light w-100">Notre petit mot</span>

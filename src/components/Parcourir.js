@@ -1,4 +1,13 @@
+import React,{useEffect} from 'react';
+import {Link} from "react-router-dom";
+
 const Parcourir = props => {
+
+    useEffect(() => {
+        window.location = '#navbar';
+      }, []);
+
+
     return(
         <div id="tous-articles" className='w-100'>
             
@@ -17,7 +26,9 @@ const Parcourir = props => {
                                         <p className="text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quaerat. Blanditiis nisi id incidunt, reprehenderit facilis voluptatibus, atque recusandae dicta aut quo inventore accusamus suscipit veniam. </p>
                                         <p className="text-secondary align-self-end m-0">{art.auteur}</p>
                                     </div>
-                                    <button className="btn btn-danger">Lire</button>
+                                    <Link to={'/article/'+index}>
+                                        <button className="btn btn-danger">Lire</button>
+                                    </Link>
                                 </div>
                             </div>
                         )

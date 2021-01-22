@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const AlaUne = props => {
 
 
@@ -22,7 +24,9 @@ const AlaUne = props => {
                                             <span className="date text-right">22 janvier 2021</span>
                                         </div>
                                     </div>
-                                    <button className='btn btn-danger font-weight-bolder border border-danger  rounded-0 px-3'>Lire</button>
+                                    <Link to={'/article/'+index} className="w-100">
+                                        <button className='w-100 btn btn-danger font-weight-bolder border border-danger  rounded-0 px-3'>Lire</button>
+                                    </Link>
                                 </div>
                             </div>
                         )

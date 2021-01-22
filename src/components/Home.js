@@ -1,11 +1,15 @@
-import React, {Fragment} from 'react'
+import React, {useEffect} from 'react'
 import Banner from "./Home/Banner";
 import Categories from './Home/Categories'
 import AlaUne from './Home/AlaUne';
 import SideBar from './Home/SideBar';
 
 const Home = props => {
-    // console.log(props.allArticles[0].coverImg);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return(
         <div id="home">
            <Banner allArticles={props.leState.articles}/>

@@ -9931,6 +9931,13 @@ h3 {
 #root {
   width: 100%;
   font-family: sans-serif;
+  position: relative;
+}
+
+button#toTop {
+  top: 80vh;
+  left: 2vw;
+  z-index: 50;
 }
 
 nav {
@@ -10073,10 +10080,41 @@ nav a:hover {
 #tous-articles .tous-article-page .row .text {
   position: relative;
 }
-#tous-articles .tous-article-page .row .text button {
+#tous-articles .tous-article-page .row .text a {
   position: absolute;
   top: 75%;
   right: 20px;
+}
+
+#form form .row input, #form form .row textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 3px #c74c43;
+  transition: 0.2s;
+}
+#form form .row input#recit, #form form .row textarea#recit {
+  border-left: solid 3px #c74c43;
+}
+#form form .row input::placeholder, #form form .row textarea::placeholder {
+  color: #c74c43;
+}
+#form form .row input:focus, #form form .row textarea:focus {
+  outline: none;
+  background-color: #c74c43;
+  color: white !important;
+  caret-color: white;
+}
+#form form .row input:focus::placeholder, #form form .row textarea:focus::placeholder {
+  color: white;
+}
+#form form .row #name, #form form .row #email {
+  width: 40%;
+}
+#form form .row textarea {
+  resize: none;
+}
+#form form .row input#file {
+  display: none;
 }
 
 footer {
