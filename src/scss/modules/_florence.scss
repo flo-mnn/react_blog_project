@@ -1,0 +1,41 @@
+#root {
+    width: 100%;
+}
+#home {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    .inner-banner {
+        width: 80%;
+        height: 500px;
+        overflow-y: hidden;
+        position: relative;
+        .voile {
+            background-color: black;
+            z-index: 15;
+            img {
+                width: 100%;
+                opacity: 0.6;
+            }
+        }
+        .inner-text {
+            z-index: 20;
+        }
+    }
+    #categories {
+        .col-12 {
+            height: 250px;
+            .inner-col {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 95%;
+                height: 100%;
+            }
+            h1 {
+                margin: 0;
+                background-color: rgba(0, 0, 0, 0.5)
+            };
+        }
+    }
+}

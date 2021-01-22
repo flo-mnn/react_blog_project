@@ -1,7 +1,6 @@
 // bootstrap
-import $ from "jquery";
+import 'jquery/dist/jquery';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // react
 import React from 'react';
 import ReactDOM from 'react-dom';
