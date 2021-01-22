@@ -1,5 +1,22 @@
 #root {
     width: 100%;
+    font-family: sans-serif;
+}
+nav {
+    height: 200px;
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 20px 50px;
+        font-weight: bold;
+        &:hover {
+            text-decoration: none;
+            border-bottom: solid 3px $danger;
+            border-top: solid 3px $danger;
+            color: $danger;
+            font-style: italic;
+        }
+    }
 }
 #home {
     margin: 0;

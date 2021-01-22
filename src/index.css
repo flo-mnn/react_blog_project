@@ -9930,6 +9930,24 @@ h3 {
 }
 #root {
   width: 100%;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 200px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: none;
+  border-bottom: solid 3px #c74c43;
+  border-top: solid 3px #c74c43;
+  color: #c74c43;
+  font-style: italic;
 }
 
 #home {

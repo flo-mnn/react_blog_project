@@ -1,10 +1,18 @@
 import React, {Component} from 'react';
-import Home from "./components/Florence";
 import venezia from './components/Home/venice.jpg';
 import istanbul from './components/Home/istanbul.jpg';
 import sydney from './components/Home/sydney.jpg';
 import piter from './components/Home/piter.jpg';
 import newyork from './components/Home/newyork.jpg';
+import Home from "./components/Florence";
+import Header from './components/Header';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -29,9 +37,12 @@ class App extends Component{
     console.log(this.state);
 
     return (
-      <div className="App w-100">
-        <Home leState={this.state}/>
-      </div>
+      <Router>
+        <div className="App w-100">
+          <Header />
+          <Home leState={this.state}/>
+        </div>
+      </Router>
     );
   }
 }
