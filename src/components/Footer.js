@@ -1,5 +1,6 @@
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = props => {
     return(
@@ -19,7 +20,9 @@ const Footer = props => {
             </div>
             <div id="write" className="d-flex align-items-center justify-content-end p-5 px-5">
                 <p className="m-0 font-italic text-light">Fais rêver à ton tour et publie ton récit de voyage</p>
-                <button className="btn btn-danger py-2 px-3 mx-2 "><FontAwesomeIcon icon={faEnvelope} /> </button>
+                <Link to='/form'>
+                    <button className="btn btn-danger py-2 px-3 mx-2 "><FontAwesomeIcon icon={faEnvelope} /> </button>
+                </Link>
             </div>
             <div id="copyright" className='text-center p-5 bg-danger text-light'>
                 <span>- Copyright 2021 - ... en 180 jours -</span>
