@@ -73,9 +73,9 @@ class App extends Component{
                 <Home leState={this.state}/>
               </Route>
             </Switch>
+            <Footer />
           </div>
         </Router>
-        <Footer />
       </Fragment>
     );
   }
