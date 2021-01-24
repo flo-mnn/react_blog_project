@@ -1,6 +1,4 @@
-// :root{
-//     scroll-behavior: smooth;
-// }
+@import './responsive';
 
 #root {
     width: 100%;
@@ -14,6 +12,7 @@ button#toTop {
 };
 
 nav {
+    width: 50%;
     height: 200px;
     a {
         text-decoration: none;
@@ -29,6 +28,28 @@ nav {
         }
     }
 }
+#navbar-sm{
+    display: none;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 20px 50px;
+        font-weight: bold;
+        &:hover {
+            text-decoration: none;
+            border-bottom: solid 3px $danger;
+            border-top: solid 3px $danger;
+            color: $danger;
+            font-style: italic;
+        }
+    }
+}
+
+.display {
+    display: flex !important;
+}
+
 #home {
     margin: 0;
     padding: 0;
@@ -48,6 +69,7 @@ nav {
                 }
             }
             .inner-text {
+                width: 50%;
                 z-index: 20;
             }
         }
@@ -74,7 +96,7 @@ nav {
         #une {
             width: 80%;
             .carte {
-                height: 400px;
+                height: fit-content;
                 .inner-col {
                     background-color:$danger;
                     .preview {
@@ -152,15 +174,20 @@ nav {
             height: 230px;
             .img {
                 overflow: hidden;
+                border-top-right-radius: 0px !important;
                 img {
                     height: 230px;
+                    border-top-left-radius: 15px; 
+                    border-bottom-left-radius: 15px; 
                 }
             };
             .text {
                 position: relative;
+                border: solid 1px $danger;
+                border-left: none;
                 a {
                     position: absolute;
-                    top: 75%;
+                    top: 75% !important;
                     right: 20px;
                 }
             }
@@ -193,7 +220,7 @@ nav {
                 }
             }
             #name, #email {
-                width: 40%;
+                width: 40% !important;
             };
             textarea{
                 resize: none;
@@ -208,13 +235,13 @@ nav {
 footer {
     margin-top: 100px;
     #subscribe {
-        height: 175px;
+        height: 175px !important;
         .inscris {
             font-size: large;
             text-shadow: 2px 1px 2px $danger;
         }
         #email {
-            width: 50%;
+            width: 50% !important;
             border-bottom: 3px solid $danger !important;
             &::placeholder {
                 color: $danger;

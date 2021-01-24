@@ -20,16 +20,16 @@ const Form = props => {
                     <input type="email" id="email" name="email" placeholder="ilovetotravel@world.com" className="p-3 text-danger" required/>
                 </div>
                 <div className="row mx-0 w-100 mb-5">
-                    <textarea name="recit" id="recit" rows="10" className="w-100 text-danger p-3" required>
-                        Cher ...en 180 jours,
+                    <textarea name="recit" id="recit" rows="10" className="w-100 text-danger p-3" required defaultValue="Cher ...en 180 jours,">
+                        
                     </textarea>
                 </div>
                 <div className="row mx-0 w-100">
                     <label htmlFor="file" className='btn btn-danger rounded-0 px-4' >Choisir une image</label>
                     <input id="file" type="file" required/>
                 </div>
-                <div className="row mx-0 w-100 justify-content-end mb-5">
-                   <input type="submit" value="Envoyer" id='send' className="btn btn-danger rounded-0 px-4 mr-5"/>
+                <div className="row mx-0 w-100 justify-content-md-end mb-5">
+                   <input type="submit" value="Envoyer" id='send' className="btn btn-danger rounded-0 px-4 mr-md-5"/>
                 </div>
 
             </form>

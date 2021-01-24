@@ -12,11 +12,11 @@ const Banner = props => {
                         <div className="voile position-absolute-center w-100 h-100">
                             <img src={props.allArticles[0].coverImg} alt="venise" className="position-absolute-center"/>
                         </div>
-                        <div className='inner-text w-50 position-absolute text-center text-light'>
+                        <div className='inner-text position-absolute text-center text-light'>
                             <h1>{props.allArticles[0].titre}</h1>
                             <h5>by {props.allArticles[0].auteur}</h5>
                             <Link to="/article/0">
-                                <button className="read btn btn-secondary rounded-0 px-5 py-2">Lire</button>
+                                <button className="read btn btn-secondary rounded-0 px-md-5 px-2 py-2 mt-2">Lire</button>
                             </Link>
                         </div>
                     </div>

@@ -17,9 +17,9 @@ const Parcourir = props => {
                         return (
                             <div className="row w-75 rounded-left my-3 text-danger" key={index}>
                                 <div className="img col-12 col-md-4 p-0 m-0">
-                                    <img src={art.coverImg} alt="coverImage" className=" rounded-left"/>
+                                    <img src={art.coverImg} alt="coverImage" className=""/>
                                 </div>
-                                <div className="col-12 col-md-8 text px-0 border-top border-right border-bottom border-danger">
+                                <div className="col-12 col-md-8 text px-0 ">
                                     <h5 className="py-3 bg-danger text-light px-3">{art.titre}</h5>
                                     <div className="sous-text px-3">
                                         <span>22 janvier 2021</span>

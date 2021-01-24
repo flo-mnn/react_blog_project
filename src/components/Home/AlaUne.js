@@ -7,12 +7,12 @@ const AlaUne = props => {
 
         <div id="une" className="" >
             <h1 className="text-center font-italic p-3 bg-danger text-light">À la Une</h1>
-            <div className='row m-0 px-5'>
+            <div className='row m-0 px-lg-5'>
                 {
                     props.allArticles.map((art,index) => {
                         return (
-                            <div className="carte col-12 col-md-6 mb-4 text-light" key={index}>
-                                <div className="inner-col m-5 h-100 d-flex flex-column align-content-center justify-content-between">
+                            <div className="carte col-12 col-lg-6 mb-4 mb-md-2 mb-lg-4 text-light" key={index}>
+                                <div className="inner-col m-md-5  d-flex flex-column align-content-center justify-content-between">
                                     <div className="preview w-100">
                                         <img src={art.coverImg} alt="articlecover" className="img-fluid"/>
                                     </div>
