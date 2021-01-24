@@ -1,0 +1,150 @@
+@media screen and (min-width: 320px) and (max-width: 719px) {
+    #home {
+        #carouselBanner {
+            width: 100% !important;
+            .inner-banner {
+                height: fit-content !important;
+                .inner-text {
+                    width: 80%;
+                    h1 {
+                        font-size: medium;
+                    };
+                    h5 {
+                        font-size: small;
+                    };
+                    button {
+                        font-size: small;
+                    };
+                }
+            }
+        }
+        #content {
+            position: relative;
+            flex-direction: column;
+            #une {
+                width: 100% !important;
+            }
+            #sidebar {
+                order: -1;
+                position: static !important;
+                width: 100% !important;
+            };
+        }
+    }
+};
+
+#tous-articles {
+    .tous-article-page {
+        .row {
+            height: fit-content !important;
+            .img {
+                border-top-right-radius: 15px; 
+                img {
+                    border-bottom-left-radius: 0px ;
+                }
+            };
+            .text {
+                border-left: solid 1px $danger ;
+                a {
+                    top: 85% !important;
+                }
+            }
+        }
+    }
+};
+
+#form {
+    #name, #email {
+        width: 100% !important;
+    }
+}
+
+
+footer {
+    #subscribe {
+        height: fit-content !important;
+        #email {
+            width: 100% !important;
+        };
+    };
+    
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 991px) {
+
+nav {
+    height: 150px !important;
+    width: 90% !important;
+}
+
+#home {
+    #carouselBanner {
+        width: 100% !important;
+        .inner-banner {
+            height: fit-content !important;
+        }
+    }
+    #content {
+        position: relative;
+        #une {
+            width: 60% !important;
+        }
+        #sidebar {
+            width: 40% !important;
+        };
+    }
+}
+
+
+#tous-articles {
+    .tous-article-page {
+        
+        .row {
+            height: 250px !important;
+            .img {
+                overflow: hidden;
+                border-top-right-radius: 0px !important;
+                img {
+                    height: 250px !important;
+                    border-top-left-radius: 15px; 
+                    border-bottom-left-radius: 15px; 
+                }
+            };
+            .text {
+                position: relative;
+                border: solid 1px $danger;
+                border-left: none;
+                a {
+                    position: absolute;
+                    top: 75% !important;
+                    right: 20px;
+                }
+            }
+        }
+    }
+};
+
+#form {
+    form {
+        .row {
+            #name, #email {
+                width: 100% !important;
+            };
+        }
+    }
+}
+
+footer {
+    #subscribe {
+        height: fit-content !important;
+        #email {
+            width: 100% !important;
+        };
+    };
+    
+}
+
+
+
+};

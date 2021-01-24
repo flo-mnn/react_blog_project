@@ -21,9 +21,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
-class App extends Component{
 
-  
+class App extends Component{  
   state = {
     articles : [
       {titre: `Venezia, la belle au bord de l'eau`, coverImg: venezia, auteur: "Letizia Santina", tags: ['City Trip','Rencontres']},
@@ -44,6 +43,7 @@ class App extends Component{
       behavior: 'smooth'
     });
   };
+
 
   render() {
 

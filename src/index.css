@@ -9928,6 +9928,121 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 719px) {
+  #home #carouselBanner {
+    width: 100% !important;
+  }
+  #home #carouselBanner .inner-banner {
+    height: fit-content !important;
+  }
+  #home #carouselBanner .inner-banner .inner-text {
+    width: 80%;
+  }
+  #home #carouselBanner .inner-banner .inner-text h1 {
+    font-size: medium;
+  }
+  #home #carouselBanner .inner-banner .inner-text h5 {
+    font-size: small;
+  }
+  #home #carouselBanner .inner-banner .inner-text button {
+    font-size: small;
+  }
+  #home #content {
+    position: relative;
+    flex-direction: column;
+  }
+  #home #content #une {
+    width: 100% !important;
+  }
+  #home #content #sidebar {
+    order: -1;
+    position: static !important;
+    width: 100% !important;
+  }
+}
+#tous-articles .tous-article-page .row {
+  height: fit-content !important;
+}
+#tous-articles .tous-article-page .row .img {
+  border-top-right-radius: 15px;
+}
+#tous-articles .tous-article-page .row .img img {
+  border-bottom-left-radius: 0px;
+}
+#tous-articles .tous-article-page .row .text {
+  border-left: solid 1px #c74c43;
+}
+#tous-articles .tous-article-page .row .text a {
+  top: 85% !important;
+}
+
+#form #name, #form #email {
+  width: 100% !important;
+}
+
+footer #subscribe {
+  height: fit-content !important;
+}
+footer #subscribe #email {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 720px) and (max-width: 991px) {
+  nav {
+    height: 150px !important;
+    width: 90% !important;
+  }
+
+  #home #carouselBanner {
+    width: 100% !important;
+  }
+  #home #carouselBanner .inner-banner {
+    height: fit-content !important;
+  }
+  #home #content {
+    position: relative;
+  }
+  #home #content #une {
+    width: 60% !important;
+  }
+  #home #content #sidebar {
+    width: 40% !important;
+  }
+
+  #tous-articles .tous-article-page .row {
+    height: 250px !important;
+  }
+  #tous-articles .tous-article-page .row .img {
+    overflow: hidden;
+    border-top-right-radius: 0px !important;
+  }
+  #tous-articles .tous-article-page .row .img img {
+    height: 250px !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  #tous-articles .tous-article-page .row .text {
+    position: relative;
+    border: solid 1px #c74c43;
+    border-left: none;
+  }
+  #tous-articles .tous-article-page .row .text a {
+    position: absolute;
+    top: 75% !important;
+    right: 20px;
+  }
+
+  #form form .row #name, #form form .row #email {
+    width: 100% !important;
+  }
+
+  footer #subscribe {
+    height: fit-content !important;
+  }
+  footer #subscribe #email {
+    width: 100% !important;
+  }
+}
 #root {
   width: 100%;
   font-family: sans-serif;
@@ -9941,6 +10056,7 @@ button#toTop {
 }
 
 nav {
+  width: 50%;
   height: 200px;
 }
 nav a {
@@ -9955,6 +10071,28 @@ nav a:hover {
   border-top: solid 3px #c74c43;
   color: #c74c43;
   font-style: italic;
+}
+
+#navbar-sm {
+  display: none;
+  flex-direction: column;
+}
+#navbar-sm a {
+  text-decoration: none;
+  color: black;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+#navbar-sm a:hover {
+  text-decoration: none;
+  border-bottom: solid 3px #c74c43;
+  border-top: solid 3px #c74c43;
+  color: #c74c43;
+  font-style: italic;
+}
+
+.display {
+  display: flex !important;
 }
 
 #home {
@@ -9978,6 +10116,7 @@ nav a:hover {
   opacity: 0.6;
 }
 #home #carouselBanner .inner-banner .inner-text {
+  width: 50%;
   z-index: 20;
 }
 #home #categories {
@@ -10004,7 +10143,7 @@ nav a:hover {
   width: 80%;
 }
 #home #content #une .carte {
-  height: 400px;
+  height: fit-content;
 }
 #home #content #une .carte .inner-col {
   background-color: #c74c43;
@@ -10073,16 +10212,21 @@ nav a:hover {
 }
 #tous-articles .tous-article-page .row .img {
   overflow: hidden;
+  border-top-right-radius: 0px !important;
 }
 #tous-articles .tous-article-page .row .img img {
   height: 230px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 #tous-articles .tous-article-page .row .text {
   position: relative;
+  border: solid 1px #c74c43;
+  border-left: none;
 }
 #tous-articles .tous-article-page .row .text a {
   position: absolute;
-  top: 75%;
+  top: 75% !important;
   right: 20px;
 }
 
@@ -10108,7 +10252,7 @@ nav a:hover {
   color: white;
 }
 #form form .row #name, #form form .row #email {
-  width: 40%;
+  width: 40% !important;
 }
 #form form .row textarea {
   resize: none;
@@ -10121,14 +10265,14 @@ footer {
   margin-top: 100px;
 }
 footer #subscribe {
-  height: 175px;
+  height: 175px !important;
 }
 footer #subscribe .inscris {
   font-size: large;
   text-shadow: 2px 1px 2px #c74c43;
 }
 footer #subscribe #email {
-  width: 50%;
+  width: 50% !important;
   border-bottom: 3px solid #c74c43 !important;
 }
 footer #subscribe #email::placeholder {
