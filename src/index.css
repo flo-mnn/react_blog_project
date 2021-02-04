@@ -10043,158 +10043,157 @@ footer #subscribe #email {
     width: 100% !important;
   }
 }
-#root {
+body {
+  margin: 0;
+  padding: 0;
+}
+body #root {
   width: 100%;
   font-family: "Nunito";
   position: relative;
 }
-
-button#toTop {
+body #root button#toTop {
   top: 80vh;
   left: 2vw;
   z-index: 50;
 }
-
-nav {
+body #root nav {
   width: 50%;
   height: 200px;
 }
-nav a {
+body #root nav a {
   text-decoration: none;
   color: black;
   padding: 20px 50px;
   font-weight: bold;
 }
-nav a:hover {
+body #root nav a:hover {
   text-decoration: none;
   border-bottom: solid 3px #c74c43;
   border-top: solid 3px #c74c43;
   color: #c74c43;
   font-style: italic;
 }
-
-#navbar-sm {
+body #root #navbar-sm {
   display: none;
   flex-direction: column;
 }
-#navbar-sm a {
+body #root #navbar-sm a {
   text-decoration: none;
   color: black;
   padding: 20px 50px;
   font-weight: bold;
 }
-#navbar-sm a:hover {
+body #root #navbar-sm a:hover {
   text-decoration: none;
   border-bottom: solid 3px #c74c43;
   border-top: solid 3px #c74c43;
   color: #c74c43;
   font-style: italic;
 }
-
-.display {
+body #root .display {
   display: flex !important;
 }
-
-#home {
+body #root #home {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-#home #carouselBanner {
+body #root #home #carouselBanner {
   width: 80%;
 }
-#home #carouselBanner .inner-banner {
+body #root #home #carouselBanner .inner-banner {
   height: 500px;
   overflow-y: hidden;
   position: relative;
 }
-#home #carouselBanner .inner-banner .voile {
+body #root #home #carouselBanner .inner-banner .voile {
   background-color: black;
 }
-#home #carouselBanner .inner-banner .voile img {
+body #root #home #carouselBanner .inner-banner .voile img {
   width: 100%;
   opacity: 0.6;
 }
-#home #carouselBanner .inner-banner .inner-text {
+body #root #home #carouselBanner .inner-banner .inner-text {
   width: 50%;
   z-index: 20;
 }
-#home #categories {
+body #root #home #categories {
   margin-bottom: 100px !important;
 }
-#home #categories .col-12 {
+body #root #home #categories .col-12 {
   height: 250px;
 }
-#home #categories .col-12 .inner-col {
+body #root #home #categories .col-12 .inner-col {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 95%;
   height: 100%;
 }
-#home #categories .col-12 h1 {
+body #root #home #categories .col-12 h1 {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-#home #content {
+body #root #home #content {
   position: relative;
 }
-#home #content #une {
+body #root #home #content #une {
   width: 80%;
 }
-#home #content #une .carte {
+body #root #home #content #une .carte {
   height: fit-content;
 }
-#home #content #une .carte .inner-col {
+body #root #home #content #une .carte .inner-col {
   background-color: #c74c43;
 }
-#home #content #une .carte .inner-col .preview {
+body #root #home #content #une .carte .inner-col .preview {
   height: 200px;
   overflow-y: hidden;
 }
-#home #content #une .carte .inner-col .text {
+body #root #home #content #une .carte .inner-col .text {
   height: 150px;
 }
-#home #content #une .carte .inner-col .text .date {
+body #root #home #content #une .carte .inner-col .text .date {
   color: #a8a1a1;
 }
-#home #content #une .carte .inner-col button:hover {
+body #root #home #content #une .carte .inner-col button:hover {
   border: solid 1px #c74c43;
   background-color: #f8f9fa;
   color: #c74c43 !important;
 }
-#home #content #une .carte:nth-child(1) {
+body #root #home #content #une .carte:nth-child(1) {
   order: 6;
 }
-#home #content #une .carte:nth-child(2) {
+body #root #home #content #une .carte:nth-child(2) {
   order: 6;
 }
-#home #content #une .carte:nth-child(3) {
+body #root #home #content #une .carte:nth-child(3) {
   order: 6;
 }
-#home #content #sidebar {
+body #root #home #content #sidebar {
   position: sticky;
   top: 0;
   right: 0;
   width: 20%;
   height: fit-content;
 }
-#home #content #sidebar #social {
+body #root #home #content #sidebar #social {
   margin-top: 50px;
   color: #c74c43;
 }
-#home #content #sidebar #social .sociali {
+body #root #home #content #sidebar #social .sociali {
   transform-origin: center;
   transition: 0.2s;
 }
-#home #content #sidebar #social .sociali:hover {
+body #root #home #content #sidebar #social .sociali:hover {
   transform: scale(1.2);
 }
-#home #content #sidebar #random {
+body #root #home #content #sidebar #random {
   background-color: white;
   overflow: hidden;
 }
-#home #content #sidebar #random #readOne {
+body #root #home #content #sidebar #random #readOne {
   width: 100%;
   height: 200px;
   background-repeat: no-repeat;
@@ -10202,92 +10201,94 @@ nav a:hover {
   background-size: cover;
   transition: 0.4s;
 }
-#home #content #sidebar #random #readOne:hover {
+body #root #home #content #sidebar #random #readOne:hover {
   opacity: 0.8;
   transform: scale(1.2);
 }
-
-#tous-articles .tous-article-page .row {
+body #root #tous-articles .tous-article-page .row {
   height: 230px;
 }
-#tous-articles .tous-article-page .row .img {
+body #root #tous-articles .tous-article-page .row .img {
   overflow: hidden;
   border-top-right-radius: 0px !important;
 }
-#tous-articles .tous-article-page .row .img img {
+body #root #tous-articles .tous-article-page .row .img img {
   height: 230px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-#tous-articles .tous-article-page .row .text {
+body #root #tous-articles .tous-article-page .row .text {
   position: relative;
   border: solid 1px #c74c43;
   border-left: none;
 }
-#tous-articles .tous-article-page .row .text a {
+body #root #tous-articles .tous-article-page .row .text a {
   position: absolute;
   top: 75% !important;
   right: 20px;
 }
-
-#form form .row input, #form form .row textarea {
+body #root .article-content .citation span {
+  font-size: 7rem;
+  color: #c74c43;
+  line-height: 0.5;
+}
+body #root #form form .row input, body #root #form form .row textarea {
   border: none;
   border-radius: 0;
   border-bottom: solid 3px #c74c43;
   transition: 0.2s;
 }
-#form form .row input#recit, #form form .row textarea#recit {
+body #root #form form .row input#recit, body #root #form form .row textarea#recit {
   border-left: solid 3px #c74c43;
 }
-#form form .row input::placeholder, #form form .row textarea::placeholder {
+body #root #form form .row input::placeholder, body #root #form form .row textarea::placeholder {
   color: #c74c43;
 }
-#form form .row input:focus, #form form .row textarea:focus {
+body #root #form form .row input:focus, body #root #form form .row textarea:focus {
   outline: none;
   background-color: #c74c43;
   color: white !important;
   caret-color: white;
 }
-#form form .row input:focus::placeholder, #form form .row textarea:focus::placeholder {
+body #root #form form .row input:focus::placeholder, body #root #form form .row textarea:focus::placeholder {
   color: white;
 }
-#form form .row #name, #form form .row #email {
+body #root #form form .row #name, body #root #form form .row #email {
   width: 40% !important;
 }
-#form form .row textarea {
+body #root #form form .row textarea {
   resize: none;
 }
-#form form .row input#file {
+body #root #form form .row input#file {
   display: none;
 }
-
-footer {
+body #root footer {
   margin-top: 100px;
 }
-footer #subscribe {
+body #root footer #subscribe {
   height: 175px !important;
 }
-footer #subscribe .inscris {
+body #root footer #subscribe .inscris {
   font-size: large;
   text-shadow: 2px 1px 2px #c74c43;
 }
-footer #subscribe #email {
+body #root footer #subscribe #email {
   width: 50% !important;
   border-bottom: 3px solid #c74c43 !important;
 }
-footer #subscribe #email::placeholder {
+body #root footer #subscribe #email::placeholder {
   color: #c74c43;
 }
-footer #subscribe #email:focus {
+body #root footer #subscribe #email:focus {
   outline: none;
   background-color: #c74c43;
   caret-color: white;
   color: white;
 }
-footer #subscribe #email:focus::placeholder {
+body #root footer #subscribe #email:focus::placeholder {
   color: white;
 }
-footer #subscribe #plane {
+body #root footer #subscribe #plane {
   fill: white;
 }
 

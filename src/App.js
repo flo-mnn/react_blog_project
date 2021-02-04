@@ -11,6 +11,7 @@ import Home from "./components/Home";
 import Parcourir from './components/Parcourir';
 import Form from './components/Form';
 import Article from './components/Article';
+import Author from './components/UnArticle/author.png'
 
 import {
   BrowserRouter as Router,
@@ -25,12 +26,12 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 class App extends Component{  
   state = {
     articles : [
-      {titre: `Venezia, la belle au bord de l'eau`, coverImg: venezia, auteur: "Letizia Santina", tags: ['City Trip','Rencontres']},
-      {titre: `Sydney, au coeur de l'Océanie lointaine`, coverImg: sydney, auteur: "Jack Matthew", tags: ['Off Road','Foodies']},
-      {titre: `Istanbul, ô cité emplie d'Histoire`, coverImg: istanbul, auteur: "Mehtap M.",tags: ['City Trip','Foodies','Rencontres']},
-      {titre: `Saint-Pétersbourg, la détermination d'un Empire`, coverImg: piter, auteur: "Nadezhda Nikolaeva",tags: ['City Trip','Foodies']},
-      {titre: `New-York, le rêve américain XXL`, coverImg: newyork, auteur: "Brooke Loyd",tags: ['City Trip']},
-      {titre: `Cap sur Bonne-Espérance`, coverImg: kruger, auteur: "Brooke Loyd",tags: ['Off Road','Foodies']},
+      {titre: `Venezia, la belle au bord de l'eau`, coverImg: venezia, auteur: "Letizia Santina", tags: ['City Trip','Rencontres'], author: Author},
+      {titre: `Sydney, au coeur de l'Océanie lointaine`, coverImg: sydney, auteur: "Jack Matthew", tags: ['Off Road','Foodies'], author: Author},
+      {titre: `Istanbul, ô cité emplie d'Histoire`, coverImg: istanbul, auteur: "Mehtap M.",tags: ['City Trip','Foodies','Rencontres'], author: Author},
+      {titre: `Saint-Pétersbourg, la détermination d'un Empire`, coverImg: piter, auteur: "Nadezhda Nikolaeva",tags: ['City Trip','Foodies'], author: Author},
+      {titre: `New-York, le rêve américain XXL`, coverImg: newyork, auteur: "Brooke Loyd",tags: ['City Trip'], author: Author},
+      {titre: `Cap sur Bonne-Espérance`, coverImg: kruger, auteur: "Brooke Loyd",tags: ['Off Road','Foodies'], author: Author},
     ],
     tags : ['Off Road','CityTrip','Foodies','Rencontres'],
   }
